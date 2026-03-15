@@ -2,6 +2,17 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.0.
 
+## Features
+- Standalone component architecture
+- Reactive form input with debounce
+- Async uniqueness check with simulated backend
+- Clear state feedback: Idle, Checking..., Available, Taken
+
+## Architectural Decisions
+- **Signals**: Used for state feedback instead of NgRx for simplicity.
+- **Standalone Components**: Aligns with Angular’s modern best practices.
+- **RxJS**: Operators like `debounceTime` and `switchMap` ensure efficient API simulation.
+
 ## Development server
 
 To start a local development server, run:
@@ -36,24 +47,3 @@ ng build
 
 This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
