@@ -1,5 +1,4 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { UserCheckComponent } from './user/user-check/user-check';
 
 @Component({
@@ -9,5 +8,5 @@ import { UserCheckComponent } from './user/user-check/user-check';
   styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('user-availability-check');
+  protected readonly title = signal('user-availability-');
 }
