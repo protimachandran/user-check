@@ -1,12 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { UserCheckComponent } from './user/user-check/user-check';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
+ imports: [UserCheckComponent],
+  template: `<app-user-check></app-user-check>`,
   styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('user-availability');
+  protected readonly title = signal('user-availability-check');
 }
